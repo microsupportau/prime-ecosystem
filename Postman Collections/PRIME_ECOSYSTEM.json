@@ -37,6 +37,36 @@
             "description": "List Jobs"
           },
           "response": []
+        },
+        {
+          "name": "List Allocations",
+          "_postman_id": "d8405297-7fba-4948-bcdc-99ae52b5a80e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/vnd.api.v2+json",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJmZWE0NTJmZi1hYWExLTQxZTgtYTgxMS1kN2Q1MTQxMmNmNmYiLCJqdGkiOiJjZmJjOGMxODczZGIwNjgxYTBhOWY2ZDg2NDVjZTc3ODM2ZGMyMWJmZGUwYjUzMzk4NTQ0ZTNiYjc5ZGY4ZDBhN2YwNWJkNDBmYjU1OGJmYiIsImlhdCI6MTU5Mjk2NDYzMywibmJmIjoxNTkyOTY0NjMzLCJleHAiOjE1OTI5ODYyMzMsInN1YiI6IjIzIiwic2NvcGVzIjpbXX0.CPRUWA5dn7RCmO3hPmhY-Zy91Y0FTL3C4hBAOwmNovjTW4TzP19_0NOCkXj_GbYsnEczpJexvlYWrHX8vCar8W3H1SyZ_Gtjkl5sep9pPJXiDFG6wVpTElqdi_p3U33ZCscGpvOjn2pIhDy1W1gNUzJZDY5deuFIWfx3PRxL0r3OAAvrQj3voIorUrHcR6SB8AeczFwsY2Dlzwv6O6B6lySDXROslFQ8FXT3hAudsfq9wXScn-l9UXGJ7CjET4tyE91Cgyq7b4IQaZW0EbEFeHbhB38Dp2N60Iv-dgsSa4D__E6SyCj0BSAHSaNlaHa98dUDtpm-IaXxRPbZ1On1xhLEdvb20L--NvM_s-2BQNLYnHYIDWErCr5wTzQnJ-vTsdWre3qOqRZkfObSlLizKXWd0DGaAMhkDnartKICTVtK7H6lUMWDhXFltkCzL2YAwqcXUevVUwj5ApWcFnriSDiTlGIUieYOJ-79McOIT4oJKTkVqfq4FBbyVteMYdFFzZMvP_nYMdT_lY_GYxf32K6HZjFkVqlBvi8xPhOTwJxPubbrWqQE4djSIeZ2bQHmx7Zwm98cRQ1TJANKFRLp8jZC9--qMj7H5WICBMxVMxqZZnVf7aa-gPBz1HuAF1CCne1DY9yk6nOeQNEduPEMIw8EUgr58SH7jEWIjimxgzk",
+                "type": "text"
+              }
+            ],
+            "url": "https://sandbox.primeeco.tech/api.prime/v2/allocations",
+            "description": "List Allocations"
+          },
+          "response": []
         }
       ],
       "_postman_id": "2848dde9-03f6-450f-974b-b047c6a2f8d4"
@@ -149,36 +179,6 @@
         },
         "url": "https://sandbox.primeeco.tech/api.prime/v2/oauth/token",
         "description": "Refreshing an Access Token"
-      },
-      "response": []
-    },
-    {
-      "name": "List Allocations",
-      "_postman_id": "d8405297-7fba-4948-bcdc-99ae52b5a80e",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Accept",
-            "value": "application/vnd.api.v2+json",
-            "type": "text"
-          },
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          },
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJmZWE0NTJmZi1hYWExLTQxZTgtYTgxMS1kN2Q1MTQxMmNmNmYiLCJqdGkiOiJjZmJjOGMxODczZGIwNjgxYTBhOWY2ZDg2NDVjZTc3ODM2ZGMyMWJmZGUwYjUzMzk4NTQ0ZTNiYjc5ZGY4ZDBhN2YwNWJkNDBmYjU1OGJmYiIsImlhdCI6MTU5Mjk2NDYzMywibmJmIjoxNTkyOTY0NjMzLCJleHAiOjE1OTI5ODYyMzMsInN1YiI6IjIzIiwic2NvcGVzIjpbXX0.CPRUWA5dn7RCmO3hPmhY-Zy91Y0FTL3C4hBAOwmNovjTW4TzP19_0NOCkXj_GbYsnEczpJexvlYWrHX8vCar8W3H1SyZ_Gtjkl5sep9pPJXiDFG6wVpTElqdi_p3U33ZCscGpvOjn2pIhDy1W1gNUzJZDY5deuFIWfx3PRxL0r3OAAvrQj3voIorUrHcR6SB8AeczFwsY2Dlzwv6O6B6lySDXROslFQ8FXT3hAudsfq9wXScn-l9UXGJ7CjET4tyE91Cgyq7b4IQaZW0EbEFeHbhB38Dp2N60Iv-dgsSa4D__E6SyCj0BSAHSaNlaHa98dUDtpm-IaXxRPbZ1On1xhLEdvb20L--NvM_s-2BQNLYnHYIDWErCr5wTzQnJ-vTsdWre3qOqRZkfObSlLizKXWd0DGaAMhkDnartKICTVtK7H6lUMWDhXFltkCzL2YAwqcXUevVUwj5ApWcFnriSDiTlGIUieYOJ-79McOIT4oJKTkVqfq4FBbyVteMYdFFzZMvP_nYMdT_lY_GYxf32K6HZjFkVqlBvi8xPhOTwJxPubbrWqQE4djSIeZ2bQHmx7Zwm98cRQ1TJANKFRLp8jZC9--qMj7H5WICBMxVMxqZZnVf7aa-gPBz1HuAF1CCne1DY9yk6nOeQNEduPEMIw8EUgr58SH7jEWIjimxgzk",
-            "type": "text"
-          }
-        ],
-        "url": "https://sandbox.primeeco.tech/api.prime/v2/allocations",
-        "description": "List Allocations"
       },
       "response": []
     }
