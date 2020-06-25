@@ -117,7 +117,7 @@
       "response": []
     },
     {
-      "name": "List Jobs",
+      "name": "Job - List Jobs",
       "_postman_id": "408f6b83-81c7-4476-8715-9a46a6492f85",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
