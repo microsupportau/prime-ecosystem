@@ -1,0 +1,180 @@
+{
+  "info": {
+    "_postman_id": "1155baa5-f76c-4b3c-8ba1-efdbb67b8e27",
+    "name": "PRIME ECOSYSTEM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Getting an Access Token",
+      "_postman_id": "c74023ad-2e39-4372-a3a2-a7a0f30e2446",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/vnd.api.v2+json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text"
+            },
+            {
+              "key": "username",
+              "value": "shbr.api@primeeco.tech",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "cVOG&pDqLRmV",
+              "type": "text"
+            },
+            {
+              "key": "client_id",
+              "value": "fea452ff-aaa1-41e8-a811-d7d51412cf6f",
+              "type": "text"
+            },
+            {
+              "key": "client_secret",
+              "value": "v64geudd5OdO1FaToUGQPOxp30i1dC21M5zCRQwe",
+              "type": "text"
+            }
+          ],
+          "options": {
+            "urlencoded": {}
+          }
+        },
+        "url": "https://sandbox.primeeco.tech/api.prime/v2/oauth/token",
+        "description": "Getting an Access Token"
+      },
+      "response": []
+    },
+    {
+      "name": "Refreshing an Access Token",
+      "_postman_id": "bff0b5c1-f634-4eb6-93c0-2d77b5e8a186",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/vnd.api.v2+json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "value": "refresh_token",
+              "type": "text"
+            },
+            {
+              "key": "client_id",
+              "value": "fea452ff-aaa1-41e8-a811-d7d51412cf6f",
+              "type": "text"
+            },
+            {
+              "key": "client_secret",
+              "value": "v64geudd5OdO1FaToUGQPOxp30i1dC21M5zCRQwe",
+              "type": "text"
+            },
+            {
+              "key": "refresh_token",
+              "value": "def502008daf0500e5e0c3e6fe09b5be6e8128fe6dcac2eba293e3a87e1bf47bf68d0495e644041b77c881dc527ffb34bf545714a09189965a77bc06ba3e689a2898cff8367246dc308d1df4c9cdc606ce61b4a2f0f1e80feb93e77a4461b4b55253e9c36550093743310e014cec81e3c995c144dc4e346ecf783ffc96d514b15ed363240e4741a327b72941e93e9f9b50b95fc570ea5355c36a0b59278e2c403b71cbc60699ab9f2e902b907dd8ce13e53542948001caa5f5e2f7c2e8f3a2df0c3ca209a69b0f6e9b89209d48c33c2791f799952495ec43a7f585eee56f4259cc4dba8abeb69aa77174241abb3cc5c81cab7a8c02f305e692d761a0fb807abc8c2b4e85809bc93ec708326013f09cf26512f9dae4ca23340173e06c395069fc3f1f2eebfdb860448164f071a9e663027fbebbd1b654fe8f22d64c2e773024501ef917261fffa240076fdd0d07a1d8938c575993d66ff780c8deae2d53ea8031c1f680d7ae3a779a2b2b065bb2163afcf24d9bc7cf4fb587b0341cdc8c3f0a05476f5c2593",
+              "type": "text"
+            }
+          ],
+          "options": {
+            "urlencoded": {}
+          }
+        },
+        "url": "https://sandbox.primeeco.tech/api.prime/v2/oauth/token",
+        "description": "Refreshing an Access Token"
+      },
+      "response": []
+    },
+    {
+      "name": "List Jobs",
+      "_postman_id": "408f6b83-81c7-4476-8715-9a46a6492f85",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJmZWE0NTJmZi1hYWExLTQxZTgtYTgxMS1kN2Q1MTQxMmNmNmYiLCJqdGkiOiJjZmJjOGMxODczZGIwNjgxYTBhOWY2ZDg2NDVjZTc3ODM2ZGMyMWJmZGUwYjUzMzk4NTQ0ZTNiYjc5ZGY4ZDBhN2YwNWJkNDBmYjU1OGJmYiIsImlhdCI6MTU5Mjk2NDYzMywibmJmIjoxNTkyOTY0NjMzLCJleHAiOjE1OTI5ODYyMzMsInN1YiI6IjIzIiwic2NvcGVzIjpbXX0.CPRUWA5dn7RCmO3hPmhY-Zy91Y0FTL3C4hBAOwmNovjTW4TzP19_0NOCkXj_GbYsnEczpJexvlYWrHX8vCar8W3H1SyZ_Gtjkl5sep9pPJXiDFG6wVpTElqdi_p3U33ZCscGpvOjn2pIhDy1W1gNUzJZDY5deuFIWfx3PRxL0r3OAAvrQj3voIorUrHcR6SB8AeczFwsY2Dlzwv6O6B6lySDXROslFQ8FXT3hAudsfq9wXScn-l9UXGJ7CjET4tyE91Cgyq7b4IQaZW0EbEFeHbhB38Dp2N60Iv-dgsSa4D__E6SyCj0BSAHSaNlaHa98dUDtpm-IaXxRPbZ1On1xhLEdvb20L--NvM_s-2BQNLYnHYIDWErCr5wTzQnJ-vTsdWre3qOqRZkfObSlLizKXWd0DGaAMhkDnartKICTVtK7H6lUMWDhXFltkCzL2YAwqcXUevVUwj5ApWcFnriSDiTlGIUieYOJ-79McOIT4oJKTkVqfq4FBbyVteMYdFFzZMvP_nYMdT_lY_GYxf32K6HZjFkVqlBvi8xPhOTwJxPubbrWqQE4djSIeZ2bQHmx7Zwm98cRQ1TJANKFRLp8jZC9--qMj7H5WICBMxVMxqZZnVf7aa-gPBz1HuAF1CCne1DY9yk6nOeQNEduPEMIw8EUgr58SH7jEWIjimxgzk",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/vnd.api.v2+json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": "https://sandbox.primeeco.tech/api.prime/v2/jobs",
+        "description": "List Jobs"
+      },
+      "response": []
+    },
+    {
+      "name": "List Allocations",
+      "_postman_id": "d8405297-7fba-4948-bcdc-99ae52b5a80e",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/vnd.api.v2+json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJmZWE0NTJmZi1hYWExLTQxZTgtYTgxMS1kN2Q1MTQxMmNmNmYiLCJqdGkiOiJjZmJjOGMxODczZGIwNjgxYTBhOWY2ZDg2NDVjZTc3ODM2ZGMyMWJmZGUwYjUzMzk4NTQ0ZTNiYjc5ZGY4ZDBhN2YwNWJkNDBmYjU1OGJmYiIsImlhdCI6MTU5Mjk2NDYzMywibmJmIjoxNTkyOTY0NjMzLCJleHAiOjE1OTI5ODYyMzMsInN1YiI6IjIzIiwic2NvcGVzIjpbXX0.CPRUWA5dn7RCmO3hPmhY-Zy91Y0FTL3C4hBAOwmNovjTW4TzP19_0NOCkXj_GbYsnEczpJexvlYWrHX8vCar8W3H1SyZ_Gtjkl5sep9pPJXiDFG6wVpTElqdi_p3U33ZCscGpvOjn2pIhDy1W1gNUzJZDY5deuFIWfx3PRxL0r3OAAvrQj3voIorUrHcR6SB8AeczFwsY2Dlzwv6O6B6lySDXROslFQ8FXT3hAudsfq9wXScn-l9UXGJ7CjET4tyE91Cgyq7b4IQaZW0EbEFeHbhB38Dp2N60Iv-dgsSa4D__E6SyCj0BSAHSaNlaHa98dUDtpm-IaXxRPbZ1On1xhLEdvb20L--NvM_s-2BQNLYnHYIDWErCr5wTzQnJ-vTsdWre3qOqRZkfObSlLizKXWd0DGaAMhkDnartKICTVtK7H6lUMWDhXFltkCzL2YAwqcXUevVUwj5ApWcFnriSDiTlGIUieYOJ-79McOIT4oJKTkVqfq4FBbyVteMYdFFzZMvP_nYMdT_lY_GYxf32K6HZjFkVqlBvi8xPhOTwJxPubbrWqQE4djSIeZ2bQHmx7Zwm98cRQ1TJANKFRLp8jZC9--qMj7H5WICBMxVMxqZZnVf7aa-gPBz1HuAF1CCne1DY9yk6nOeQNEduPEMIw8EUgr58SH7jEWIjimxgzk",
+            "type": "text"
+          }
+        ],
+        "url": "https://sandbox.primeeco.tech/api.prime/v2/allocations",
+        "description": "List Allocations"
+      },
+      "response": []
+    }
+  ]
+}
