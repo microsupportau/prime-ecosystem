@@ -181,6 +181,19 @@
         "description": "Refreshing an Access Token"
       },
       "response": []
+    },
+    {
+      "name": "List Documents",
+      "_postman_id": "16fcca34-1d77-4ab6-8f9e-e05cca8ce412",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
     }
   ]
 }
