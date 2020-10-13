@@ -12,7 +12,10 @@
           "name": "List Jobs",
           "_postman_id": "408f6b83-81c7-4476-8715-9a46a6492f85",
           "protocolProfileBehavior": {
-            "disableBodyPruning": true
+            "disableBodyPruning": true,
+            "disabledSystemHeaders": {
+              "accept": true
+            }
           },
           "request": {
             "method": "GET",
@@ -183,7 +186,7 @@
       "response": []
     },
     {
-      "name": "List Documents",
+      "name": "List Attachments",
       "_postman_id": "16fcca34-1d77-4ab6-8f9e-e05cca8ce412",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -191,7 +194,14 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": ""
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [],
+          "options": {
+            "urlencoded": {}
+          }
+        },
+        "url": "https://sandbox.primeeco.tech/api.prime/v2/attachments"
       },
       "response": []
     }
