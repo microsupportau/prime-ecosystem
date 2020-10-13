@@ -189,11 +189,25 @@
       "name": "List Attachments",
       "_postman_id": "16fcca34-1d77-4ab6-8f9e-e05cca8ce412",
       "protocolProfileBehavior": {
-        "disableBodyPruning": true
+        "disableBodyPruning": true,
+        "disabledSystemHeaders": {
+          "accept": true
+        }
       },
       "request": {
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/vnd.api.v2+json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJmZWE0NTJmZi1hYWExLTQxZTgtYTgxMS1kN2Q1MTQxMmNmNmYiLCJqdGkiOiJiNTE5ZjU4NjIyY2Q1MjFiZjYxMzQzNThkOWI5ZjQxZjg2MzQ5YjM3OGI1NzE1YWRkMTBlMTY5NTM3ZGM0YTVjZGNiYmFkOTY3MjM5N2U3ZCIsImlhdCI6MTU5Mjk5OTUzOSwibmJmIjoxNTkyOTk5NTM5LCJleHAiOjE1OTMwMjExMzksInN1YiI6IjIzIiwic2NvcGVzIjpbXX0.nRqU1ccYEjzM_IIZ3lqMtmkkywbkS4h9YQBeRAdkPybnuUAj1GpOUBb7K-CRiBM6kwJ10E8Eio1ElTsBp3IFtVyTUixW1ebfEs29IZSwZ9SrYzm5wdFkUVevcoVHJ_UnRqgHbNA8ciqSQVslJMH87mCu9PKVkz4U73hMVB75pnNDee--RO-FiCrdaYy0Ds9K1qyP5cwekaJt-jnMhgSMPIjyPZaYSq69RFkdiKrAMKMlQErN4i7s37sWTHsSL1LTKBB13xlL2REoVTyteHL_wXIr-aeODhNMeaeH7xu1RHkGDYEegsGp9KA9AFT7c5aYwsdcE1TLh_rDcDgZDnuF3yv6YpDyl7g8tiC9sf6M1iEcBa8OJPAIbmyFWXgc-KMZtUd3bUYErDWzGA3j1eNmH2d1dGAHZgvQrRBe_yrNwWwm4Qx1HGXijvxfuBAdoxi61HwuT8IcdMxr55TPzioo5tFHsYIs9CAdww8kUt9DIP89z_AvfxJwvyWqEabIkD4eyj8AzfLh1ybTGoNhxa6zfV5JZ4faMfREC_VJ3IZBcCG3wjmiQstacc01yy6z9hQ5VEaY833oCIYGqYLHHyr5f-7SwyZNk6lk-i9jyBnR3p6jbLme4JXFlsgwxH5rY0byIKgB-rdBhd4Y9PT0MhcmMQO-pLbItJAFQkIitsxO7A8",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "urlencoded",
           "urlencoded": [],
