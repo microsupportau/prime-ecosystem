@@ -140,6 +140,64 @@
       "response": []
     },
     {
+      "name": "Getting an Access Token Copy",
+      "_postman_id": "f621188e-33a8-48d2-8073-4d83ca828810",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/vnd.api.v2+json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text"
+            },
+            {
+              "key": "username",
+              "value": "shbr.api@primeeco.tech",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "cVOG&pDqLRmV",
+              "type": "text"
+            },
+            {
+              "key": "client_id",
+              "value": "fea452ff-aaa1-41e8-a811-d7d51412cf6f",
+              "type": "text"
+            },
+            {
+              "key": "client_secret",
+              "value": "v64geudd5OdO1FaToUGQPOxp30i1dC21M5zCRQwe",
+              "type": "text"
+            }
+          ],
+          "options": {
+            "urlencoded": {}
+          }
+        },
+        "url": "https://sandbox.primeeco.tech/api.prime/v2/oauth/token",
+        "description": "Getting an Access Token"
+      },
+      "response": []
+    },
+    {
       "name": "Refreshing an Access Token",
       "_postman_id": "bff0b5c1-f634-4eb6-93c0-2d77b5e8a186",
       "protocolProfileBehavior": {
