@@ -231,9 +231,44 @@
         "disableBodyPruning": true
       },
       "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": "https://webexapis.com/v1/webhooks/incoming/Y2lzY29zcGFyazovL3VzL1dFQkhPT0svNmFiNDkyOGItNTU0OS00NTA2LWIyMmEtZGMyOTE5NmFmNmFi"
+      },
+      "response": []
+    },
+    {
+      "name": "https://www.primeeco.tech/api.prime/v2/api/jobs",
+      "_postman_id": "4de93630-ffb6-48aa-b64f-9d403d149c94",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
         "method": "GET",
-        "header": [],
-        "url": ""
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {access_token}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/vnd.api.v2+json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://www.primeeco.tech/api.prime/v2/api/jobs"
       },
       "response": []
     }
