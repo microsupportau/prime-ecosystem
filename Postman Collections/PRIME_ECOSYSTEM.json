@@ -29,7 +29,7 @@
               {
                 "key": "Authorization",
                 "type": "text",
-                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJmZWE0NTJmZi1hYWExLTQxZTgtYTgxMS1kN2Q1MTQxMmNmNmYiLCJqdGkiOiJiNTE5ZjU4NjIyY2Q1MjFiZjYxMzQzNThkOWI5ZjQxZjg2MzQ5YjM3OGI1NzE1YWRkMTBlMTY5NTM3ZGM0YTVjZGNiYmFkOTY3MjM5N2U3ZCIsImlhdCI6MTU5Mjk5OTUzOSwibmJmIjoxNTkyOTk5NTM5LCJleHAiOjE1OTMwMjExMzksInN1YiI6IjIzIiwic2NvcGVzIjpbXX0.nRqU1ccYEjzM_IIZ3lqMtmkkywbkS4h9YQBeRAdkPybnuUAj1GpOUBb7K-CRiBM6kwJ10E8Eio1ElTsBp3IFtVyTUixW1ebfEs29IZSwZ9SrYzm5wdFkUVevcoVHJ_UnRqgHbNA8ciqSQVslJMH87mCu9PKVkz4U73hMVB75pnNDee--RO-FiCrdaYy0Ds9K1qyP5cwekaJt-jnMhgSMPIjyPZaYSq69RFkdiKrAMKMlQErN4i7s37sWTHsSL1LTKBB13xlL2REoVTyteHL_wXIr-aeODhNMeaeH7xu1RHkGDYEegsGp9KA9AFT7c5aYwsdcE1TLh_rDcDgZDnuF3yv6YpDyl7g8tiC9sf6M1iEcBa8OJPAIbmyFWXgc-KMZtUd3bUYErDWzGA3j1eNmH2d1dGAHZgvQrRBe_yrNwWwm4Qx1HGXijvxfuBAdoxi61HwuT8IcdMxr55TPzioo5tFHsYIs9CAdww8kUt9DIP89z_AvfxJwvyWqEabIkD4eyj8AzfLh1ybTGoNhxa6zfV5JZ4faMfREC_VJ3IZBcCG3wjmiQstacc01yy6z9hQ5VEaY833oCIYGqYLHHyr5f-7SwyZNk6lk-i9jyBnR3p6jbLme4JXFlsgwxH5rY0byIKgB-rdBhd4Y9PT0MhcmMQO-pLbItJAFQkIitsxO7A8",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJmZWE0NTJmZi1hYWExLTQxZTgtYTgxMS1kN2Q1MTQxMmNmNmYiLCJqdGkiOiI5MGQ4Mzk2MjYzOWRhMzEyYzVkNTgwNzZiZjI2NjIzZWFmMDRjZjE3MDFkOGM5YWE0ZjE5NTRhMzM5OGRjYTc3NWE4NGE4NzZmMzY5ZjQyZSIsImlhdCI6MTYwMzI1NTU1NiwibmJmIjoxNjAzMjU1NTU2LCJleHAiOjE2MDMyNzcxNTYsInN1YiI6IjIzIiwic2NvcGVzIjpbXX0.RPNGmABJtnzNM7kUIHZfNRQRH9p5jLH2TTJdSBDJNrFZs4Slo4lKnZdJ-liZ5qPGHk2NC6KajXhTUpbZehu4Y1Y2dGQfm4IYYaaHlZ7vLirbytMOUGfXAhofdRNQMsj-4LupuDaS7FHHx73Mnf8EmhHk4KsEl1AJ0tXpOnpkAtzuwDmLge3M6en1GodDAH2DMaPj97ct9YfQtKhQ72FgNKPjZn76e5zh4EfTHKbXyM99ZCQ1lAAJy0_uod-3j7hCRmW6erSD9hYl23clX0uGFxcVjksz4ryH52zVIpFyK9hbTzwySv2nQVCUnYwes-rCDdUEwrzWbJLs9od8UHvxkf4JGPQCYxCre1VXMGlZ2Det7cEi68f6x2HdZlmey6Bjarqh31zF1mWvRUls-E_LS_mlKqeGQpl2uC7l-ZtLZ9bKAFHIt63B5ezbyvP9qz1fhCcPJXaAuYL6ecNquYxxd7S0idF40obw7jtkt3TSmmEQIGY0jJZgcbOs6Trb8QBv6tdzo8RS22h_x96wgZy-eHV2AqEtBe2grwdn_VaC2r_epFAYJoaAYMxbfMC1tBd95qOtNNmI5ic-weqxl4xgHoByI54ZEKPBnhQRCUG95rGTvMDd3YIMWK_Ogl2qR76QRaOqOy6HmjSqKQ1KmLNw5CYH5wk0UMuLgr9aeIWw0Tg",
                 "disabled": true
               },
               {
@@ -250,32 +250,6 @@
           }
         ],
         "url": "https://webexapis.com/v1/webhooks/incoming/Y2lzY29zcGFyazovL3VzL1dFQkhPT0svNmFiNDkyOGItNTU0OS00NTA2LWIyMmEtZGMyOTE5NmFmNmFi"
-      },
-      "response": []
-    },
-    {
-      "name": "https://www.primeeco.tech/api.prime/v2/api/jobs",
-      "_postman_id": "4de93630-ffb6-48aa-b64f-9d403d149c94",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer {access_token}"
-          },
-          {
-            "key": "Accept",
-            "value": "application/vnd.api.v2+json"
-          },
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "url": "https://www.primeeco.tech/api.prime/v2/api/jobs"
       },
       "response": []
     }
